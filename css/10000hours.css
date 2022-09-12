@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.background {
+    background-color: #5B2386;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    margin-top: 273px;
+}
+
+h1 {
+    position: relative;
+}
+
+img.title {
+    width: 564px;
+    height: 112px;
+}
+img.tit-bg {
+    position: absolute;
+    width: 261px;
+    height: 265px;
+    left : 650px;
+    top:-70px;
+    z-index: -1;
+}
+.sub-title {
+    margin-top: 150px;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 36px;
+    color: #F5DF4D;
+}
+
+.tit-desc {
+    font-family: 'GmarketSansMedium';
+    color:#FFFFFF;
+    line-height: 40px;
+    font-size: 24px;
+    background-image: url(/img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    margin: 78px auto;
+}
+
+.desc-em {
+    font-family: 'GmarketSansBold';
+
+}
+
+.aim {
+    font-family: 'GmarketSansMedium';
+    color:#FFFFFF;
+    font-size: 24px;
+}
+
+.aim h2 {
+    visibility:hidden;
+}
+
+.calc {
+    margin-top: 168px;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    color:#FFFFFF;
+}
+
+.calc p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-em {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+}
+
+
+.txt-wannabe {
+    font-family: 'GmarketSansMedium';
+    color: #BABCBE;
+    font-size: 24px;
+    border-radius: 7px;
+    width: 228px;
+    height: 57px;
+    text-align: center;
+}
+
+.txt-time {
+    font-family: 'GmarketSansMedium';
+    color: #BABCBE;
+    font-size: 24px;
+    border-radius: 7px;
+    width: 228px;
+    height: 57px;
+    text-align: center;
+
+}
+
+.aim-1 {
+    margin-top: 10px;
+}
+
+.aim-2 {
+    margin-top: 60px;
+}
+
+.btn-aim {
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 23px;
+    color: #5B2386;
+    background-color: #FCEE21;
+    height: 66px;
+    width: 565px;
+    left: 678px;
+    border-radius: 56px;
+    padding: 10px 49px;
+    border: none;
+    margin-top: 115px;
+}
+
+.calc h2 {
+    visibility:hidden;
+}
+
+.btn-calc {
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 23px;
+    color: #5B2386;
+    background-color: #FCEE21;
+    height: 66px;
+    width: 356px;
+    left: 678px;
+    border-radius: 56px;
+    padding: 10px 49px;
+    border: none;
+    margin-top: 127px;
+}
+
+.btn-share {
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 23px;
+    color: #5B2386;
+    background-color: #FFFFFF;
+    height: 66px;
+    width: 191px;
+    left: 678px;
+    border-radius: 56px;
+    padding: 10px 49px;
+    border: none;
+    margin-top: 127px;
+}
+
+footer h2 {
+    visibility:hidden;
+}
+
+footer {
+    margin-top: 136.36px;
+}
+
+.weniv {
+    width: 125px;
+    height: 25px;
+}
+
+.copyright {
+    display: block;
+    font-family: 'Noto Sans KR';
+    color:#FFFFFF;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 17.38px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    visibility: hidden;
+}
+
+.modal {
+    height: 951px;
+    width: 947px;
+    border-radius: 0px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.modal p {
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 36px;
+    color: #5B2386;
+    margin-top: 133px;
+}
+
+.modal .fighting {
+    font-size: 96px;
+    color: #5B2386;
+    margin-top: 4px;
+}
+
+.licat {
+    display: block
+    margin: 0 auto;
+    width: 433px;
+    height: 337px;
+    padding: 29px;
+}
+
+.btn-go {
+    display: block;
+    margin: 0 auto;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 24px;
+    color: #5B2386;
+    background-color: #FCEE21;
+    height: 66px;
+    width: 508px;
+    border-radius: 56px;
+    padding: 21px, 49px, 21px, 49px;
+    border: none;
+    margin-top: 74px;
+}
+
+.btn-click {
+    vertical-align: -40px;
+}
