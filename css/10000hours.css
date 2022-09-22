@@ -29,10 +29,9 @@
 }
 
 body {
-    box-sizing: border-box;
-    position: relative;
+    /* box-sizing: border-box; */
+    /* position: relative; */
 }
-
 
 .background {
     background-color: #5B2386;
@@ -40,15 +39,24 @@ body {
 
 .wrapper {
     text-align: center;
-    position: relative;
-    margin-top: 273px;
+    /* position: relative; */
+    margin: 273px auto;
+    width: 800px;
 }
 
 h1 {
     position: relative;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    /* margin: 0 auto; */
+    width: 100%;
 }
 
 img.title {
+    margin: 0 auto;
     width: 564px;
     height: 112px;
 }
@@ -56,8 +64,9 @@ img.tit-bg {
     position: absolute;
     width: 261px;
     height: 265px;
-    left : 650px;
-    top:-70px;
+    left : 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     z-index: -1;
 }
 .sub-title {
