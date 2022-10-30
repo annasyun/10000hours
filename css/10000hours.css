@@ -33,6 +33,7 @@
 }
 
 .wrapper {
+    /* position: relative; */
     text-align: center;
     margin: 273px auto;
     width: 800px;
@@ -221,22 +222,25 @@ section h2 {
 }
 
 .modal {
-    height: 951px;
-    width: 947px;
-    border-radius: 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 610px;
+    width: 600px;
+    border-radius: 23px;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
 
 .modal p {
     font-family: 'OTEnjoystoriesBA';
-    font-size: 36px;
+    font-size: 30px;
     color: #5B2386;
-    margin-top: 133px;
 }
 
 .modal .fighting {
-    font-size: 96px;
+    font-size: 80px;
     color: #5B2386;
     margin-top: 4px;
 }
@@ -246,7 +250,6 @@ section h2 {
     margin: 0 auto;
     width: 433px;
     height: 337px;
-    padding: 29px;
 }
 
 .btn-go {
@@ -254,17 +257,33 @@ section h2 {
     margin: 0 auto;
     font-family: 'GmarketSansMedium';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: #5B2386;
     background-color: #FCEE21;
-    height: 66px;
-    width: 508px;
+    height: 50px;
+    width: 438px;
     border-radius: 56px;
-    padding: 21px, 49px, 21px, 49px;
     border: none;
-    margin-top: 74px;
+    margin-top: 25px;
+}
+
+.modal p.btn-exit-modal {
+    font-family: 'GmarketSansMedium';
+    font-size: 17px;
+    color: gray;
+    margin-top: 22px;
 }
 
 .btn-click {
     vertical-align: -40px;
+}
+
+
+.hidden {
+    position: absolute;
+    clip-path: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
