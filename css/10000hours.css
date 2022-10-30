@@ -97,6 +97,22 @@ img.tit-bg {
     visibility:hidden;
 }
 
+.img-loading {
+    width: 100px;
+    margin-top: 70px;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
 .calc {
     margin-top: 168px;
     font-family: 'GmarketSansMedium';
@@ -246,7 +262,7 @@ section h2 {
 }
 
 .licat {
-    display: block
+    display: block;
     margin: 0 auto;
     width: 433px;
     height: 337px;

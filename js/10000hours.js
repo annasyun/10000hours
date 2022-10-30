@@ -7,20 +7,26 @@ const resultTime = document.querySelector(".result-time");
 const btnTrain = document.querySelector(".btn-train");
 const modal = document.querySelector(".modal");
 const btnGo = document.querySelector(".btn-go");
+const imgLoading = document.querySelector(".img-loading");
+const btnShare = document.querySelector(".btn-share");
 
 function calc10000hours() {
     const userTime = parseInt(txtTime.value);
     resultTime.innerText = Math.ceil(10000/userTime);
 }
-function showResult() {
-    // 유효성 검사
-    calc.classList.remove("hidden");
+
+btnAim.addEventListener('click',() => {
+    calc.classList.add("hidden");
+    imgLoading.classList.remove("hidden");
     resultWannabe.innerText = txtWannabe.value;
     calc10000hours();
     txtWannabe.value = "";
     txtTime.value = "";
-}
-btnAim.addEventListener('click',showResult);
+    setTimeout(() => {
+        imgLoading.classList.add("hidden");    
+        calc.classList.remove("hidden");
+    },2000)
+})
 
 function showModal() {
     modal.classList.remove("hidden");
@@ -33,3 +39,17 @@ function exitModal() {
 }
 
 btnGo.addEventListener('click',exitModal);
+
+function copyUrl() {
+    let url = '';
+	let textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+    document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.")
+}
+
+btnShare.addEventListener('click',copyUrl);
